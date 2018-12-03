@@ -1,0 +1,21 @@
+<h3>Employee Login</h3>
+<div >
+
+<div style="margin:0 auto; width:60%;">
+<form [formGroup] ="loginform"  (ngSubmit)="onSubmit()">
+  <div class="col-lg-5"> <label for="employeeid">Employee ID</label></div>
+   <div class="col-lg-5">     
+      <input type="text" class="form-control" placeholder="Enter Employee ID.."/>    
+  </div>
+  <div class="col-lg-5">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" placeholder="Enter Password.."/>
+  </div><br>
+  <div class="col-lg-5 form-group">
+      <button [disabled]="loading" class="btn btn-primary">Login</button>
+  </div>
+  <div>
+    </div>
+</form>
+</div>
+<div>
